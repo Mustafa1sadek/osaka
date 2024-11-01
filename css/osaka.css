@@ -1,0 +1,293 @@
+
+:root
+{
+    --main-color: gray+
+    ;
+}
+
+.change-color
+{
+    position: fixed;
+    top:30% ;
+    left: 0;
+    z-index: 999;
+}
+.color-div .c
+{
+    margin: 3px;
+    
+}
+.color-div
+{
+    padding: 7px 10px;
+    background-color:#999;
+    
+}
+
+
+.change-color .icon-div
+{
+    background-color: #222;
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+    
+
+}
+
+
+
+.c1
+{
+    background-color: #ff206e;
+    width: 25px;
+    height: 25px;
+}
+.c2
+{
+    background-color: teal;
+    width: 25px;
+    height: 25px;
+}
+.c3
+{
+    background-color: orange;
+    width: 25px;
+    height: 25px;
+}
+.c4
+{
+    background-color: gray;
+    width: 25px;
+    height: 25px;
+}
+.c5
+{
+    background-color: #09c;
+    width: 25px;
+    height: 25px;
+}
+body
+{
+    overflow-y: hidden;
+}
+
+#loading
+{
+    background-color: #555;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+}
+.loader
+{
+    
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+        }
+    
+        @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        
+}
+    /* start */
+#btnUp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius:50% ;
+    z-index: 815;
+    display: none;
+}
+
+.navbar-brand img
+{
+    width: 75px;
+}
+.navbar
+{
+    transition: background-color 0.5s , padding 1s ;
+}
+header
+{
+    background-image: url(../images/slider-02.jpg);
+    background-size: cover ;
+    background-position: center center;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+header a
+{
+    color:white;
+    text-decoration: none;
+
+}
+
+header .social-icons i
+{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border:rgba(255, 255, 255 , 0.3) 1px solid;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /* new section */
+
+
+#about
+{
+    background-image: url(../images/light_dot.jpg);
+}
+.about .title h3
+{
+    font-size: 2.5rem;
+    letter-spacing: 7px;
+}
+.about .title h2
+{
+    font-size: 5rem;
+    color: var(--main-color);
+    letter-spacing: 7px;
+}
+.about .p-red
+{
+    color: var(--main-color);
+}
+
+
+
+    /* new section */
+
+
+
+#services
+{
+    background-image: url(../images/dark_dot.jpg);
+}
+.services .title h3
+{
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 7px;
+}
+.services .title h2
+{
+    font-size: 5rem;
+    color: #222;
+    letter-spacing: 7px;
+}
+.services .icon
+{
+    width: 30px;
+    height: 30px;
+    border: solid 2px white;
+}
+.services h4
+{
+    position: relative;
+    padding: 15px;
+}
+.services h4::after
+{
+    content: "";
+    position: absolute;
+    left: 35%;
+    top: 100%;
+    height: 1px;
+    width: 30%;
+    background-color:var(--main-color);
+}
+.services > p
+{
+    color: #f1f1f1;
+}
+
+
+
+
+.testimonial
+{
+    padding: 70px 0;
+    margin: 20px 0;
+}
+
+.testimonial .the-line
+{
+    width: 10%;
+    height: 2px;
+    background-color: var(--main-color);
+
+}
+
+.testimonial .sasa button
+{
+    margin: 20px;
+    position: relative;
+}
+.testimonial .sasa button img
+{
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    border-radius: 50% ;
+    width: 180%;
+}
+
+
+.testimonial .item
+{
+    border: #80808055 solid 1px;
+    position: relative;
+    padding: 50px;
+}
+
+.testimonial .item img
+{
+    width: 12%;
+    border-radius: 50%;
+}
+
+
+
+.testimonial .title h3
+{
+    font-size: 2.5rem;
+    color: #222;
+    letter-spacing: 7px;
+}
+.testimonial .title h2
+{
+    font-size: 5rem;
+    color:var(--main-color);
+
+    letter-spacing: 7px;
+}
